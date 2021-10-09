@@ -1,0 +1,107 @@
+:root {
+  --glitch-red: rgba(255, 0, 0, 0.75);
+  --glitch-green: rgba(0, 255, 0, 0.75);
+  --glitch-blue: rgba(0, 0, 255, 0.75);
+}
+
+@font-face {
+  src: url('../fonts/PIXELS.ttf');
+  font-family: PIXELS;
+}
+
+.item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: PIXELS;
+  text-shadow: 0.05em 0 0 var(--glitch-red), -0.025em -0.05em 0 var(--glitch-green),
+    0.025em 0.05em 0 var(--glitch-blue);
+  -webkit-animation: glitch 1s infinite;
+  animation: glitch 1s infinite;
+  position: relative;
+}
+
+.item span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.item span:first-child {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  -webkit-animation: glitch 1.2s infinite;
+  animation: glitch 1.2s infinite;
+}
+
+.item span:last-child {
+  -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  -webkit-animation: glitch 0.8s infinite;
+  animation: glitch 0.8s infinite;
+}
+
+@-webkit-keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 var(--glitch-red), -0.025em -0.05em 0 var(--glitch-green),
+      0.025em 0.05em 0 var(--glitch-blue);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 var(--glitch-red), -0.025em -0.05em 0 var(--glitch-green),
+      0.025em 0.05em 0 var(--glitch-blue);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 var(--glitch-red), 0.025em 0.025em 0 var(--glitch-green),
+      -0.05em -0.05em 0 var(--glitch-blue);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 var(--glitch-red), 0.025em 0.025em 0 var(--glitch-green),
+      -0.05em -0.05em 0 var(--glitch-blue);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 var(--glitch-red), 0.05em 0 0 var(--glitch-green),
+      0 -0.05em 0 var(--glitch-blue);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 var(--glitch-red), 0.05em 0 0 var(--glitch-green),
+      0 -0.05em 0 var(--glitch-blue);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 var(--glitch-red), -0.025em -0.025em 0 var(--glitch-green),
+      -0.025em -0.05em 0 var(--glitch-blue);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 var(--glitch-red), -0.025em -0.05em 0 var(--glitch-green),
+      0.025em 0.05em 0 var(--glitch-blue);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 var(--glitch-red), -0.025em -0.05em 0 var(--glitch-green),
+      0.025em 0.05em 0 var(--glitch-blue);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 var(--glitch-red), 0.025em 0.025em 0 var(--glitch-green),
+      -0.05em -0.05em 0 var(--glitch-blue);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 var(--glitch-red), 0.025em 0.025em 0 var(--glitch-green),
+      -0.05em -0.05em 0 var(--glitch-blue);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 var(--glitch-red), 0.05em 0 0 var(--glitch-green),
+      0 -0.05em 0 var(--glitch-blue);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 var(--glitch-red), 0.05em 0 0 var(--glitch-green),
+      0 -0.05em 0 var(--glitch-blue);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 var(--glitch-red), -0.025em -0.025em 0 var(--glitch-green),
+      -0.025em -0.05em 0 var(--glitch-blue);
+  }
+}
