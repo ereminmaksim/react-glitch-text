@@ -16,7 +16,6 @@
     "url": "git+https://github.com/belferink1996/react-glitch-text.git"
   },
   "scripts": {
-    "start": "react-scripts start",
     "prebuild": "rm -rf dist",
     "build": "tsc"
   },
