@@ -17,9 +17,9 @@ import Glitch from 'react-glitch-text'
 
 function App(){
   return (
-	<Glitch color='whitesmoke' fontSize='3rem'>
-	  Your super crazy c00l T3XT goes here!
-	</Glitch>
+    <Glitch color='whitesmoke' fontSize='3rem'>
+      Your super crazy c00l T3XT goes here!
+    </Glitch>
   )
 }
 ```
