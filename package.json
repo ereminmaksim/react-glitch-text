@@ -15,9 +15,6 @@
     "type": "git",
     "url": "git:https://github.com/belferink1996/react-glitch-text.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "tsc"
