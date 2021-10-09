@@ -1,6 +1,6 @@
 # React Glitch Text
 
-<img src="https://github.com/belferink1996/react-glitch-text/preview.gif" />
+<img src="https://github.com/belferink1996/react-glitch-text/blob/main/preview.gif" />
 
 ## Installation and usage
 
