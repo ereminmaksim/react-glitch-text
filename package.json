@@ -9,6 +9,7 @@
   ],
   "version": "0.1.7",
   "private": false,
+  "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
