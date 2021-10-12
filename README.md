@@ -4,7 +4,7 @@
 
 ## Installation and usage
 
-Install from npm.
+Install from npm:
 
 ```bash
 npm i --save react-glitch-text
@@ -17,7 +17,7 @@ import Glitch from 'react-glitch-text'
 
 function App(){
   return (
-    <Glitch color='whitesmoke' fontSize='3rem'>
+    <Glitch color='whitesmoke' fontSize='42px'>
       Your super crazy c00l T3XT goes here!
     </Glitch>
   )

@@ -1,19 +1,13 @@
+import React from 'react'
 import styles from '../../styles/Glitch.module.css'
-import {CSSProperties} from 'react'
+import {GlitchProps} from '../@types'
 
-const Glitch: (props: {
-  children: string
-  color?: string
-  fontSize?: string
-  style?: CSSProperties
-  className?: string
-  onClick?: () => void
-}) => JSX.Element = ({
+const Glitch: (props: GlitchProps) => JSX.Element = ({
   children,
   color = 'whitesmoke',
   fontSize = '42px',
+  className = '',
   style = {},
-  className = null,
   onClick = () => null,
 }) => {
   return (
