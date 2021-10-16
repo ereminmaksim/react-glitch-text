@@ -1,6 +1,6 @@
 # React Glitch Text
 
-<img src="https://github.com/belferink1996/react-glitch-text/blob/main/preview.gif" />
+<img src="https://github.com/belferink1996/react-glitch-text/blob/docs/main/preview.gif" />
 
 ## Installation and usage
 
@@ -29,11 +29,8 @@ function App(){
 
 Common props you may want to include:
 
-| Prop      	| Requirement 	| Default Value 	| Description                         	|
-|-----------	|-------------	|---------------	|-------------------------------------	|
-| children  	| Required    	| none          	| Should contain the text             	|
-| color     	| Optional    	| 'whitesmoke'  	| Text color                          	|
-| fontSize  	| Optional    	| '42px'        	| Text font size                      	|
-| style     	| Optional    	| {}            	| React.CSSProperties style object    	|
-| className 	| Optional    	| null          	| Additional class name(s)            	|
-| onClick   	| Optional    	| () => null    	| Function triggered by onClick event 	|
+| Prop      	| Requirement 	| Default Value 	   | Description                         	|
+|-----------	|-------------	|------------------- |-------------------------------------	|
+| children  	| Required    	| 'React Glitch Text | Should contain the text             	|
+| color     	| Optional    	| 'whitesmoke'  	   | Text color                          	|
+| fontSize  	| Optional    	| '42px'        	   | Text font size                      	|
